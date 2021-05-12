@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-
+span{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 6px;
+}
 
 .box{
     background-color: lightsteelblue;
@@ -30,9 +34,9 @@ header{
     height: 70px;
     width: 100%;
     background-color: grey;
-    position: fixed;
-    top: 0px;  
-    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* Section */
@@ -41,6 +45,26 @@ section{
     background-color: darkgrey;
     height: 600px;
 }
+
+.music-sections{
+   text-align: center;
+   margin-top: 20px;
+}
+
+.my-music{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+.recently-played, .created-for-U, .popular-artists{
+    margin: 10px;
+    height: 170px;
+    width: 30px;
+    background-color: gold;
+}
+
 
 /* ---FOOTER--- */
 
