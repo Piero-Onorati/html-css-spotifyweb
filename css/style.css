@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box{
+    background-color: lightsteelblue;
+    height: 100%;
+}
+
+
+/*----MAIN----*/
+
+main {
+    height: calc(100vh - 90px);
+    background-color: lightgray;
+    overflow: auto;
+}
+
+/* ---Sidebar---*/
+
+/* ---Content Page---/
+
+/* Header */
+
+header{
+    height: 70px;
+    width: 100%;
+    background-color: grey;
+    position: fixed;
+    top: 0px;  
+    z-index: 1;
+}
+
+/* Section */
+
+section{
+    background-color: darkgrey;
+    height: 600px;
+}
+
+/* ---FOOTER--- */
+
+footer{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: sandybrown;
+}
+
+footer .row{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+    
+
+footer .row .col-xs-2, footer .row .col-xs-4{
+    background-color: lemonchiffon;
+    height: 70px;
+}
