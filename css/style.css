@@ -46,8 +46,34 @@ span{
 
 #sidebar{
     height: calc(100vh - 90px);
-    background-color: greenyellow;
+    background-color: black;
 }
+.logo{
+    height: 70px;
+}
+.logo img{
+    padding: 20px;
+    width: 180px;
+}
+
+.navbar .row{
+    display: flex;
+    align-items: center;
+    color:white;
+}
+.navbar .row img{
+    width: 30px;
+    color:white;
+}
+
+.playlist{
+    color: white;
+}
+
+ul li{
+    list-style: none;
+}
+
 
 /* ---Content Page---*/
 .content-page{
