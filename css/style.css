@@ -20,6 +20,12 @@ h4{
     margin: 5px;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .content-page span{
     font-size: 12px;
     text-transform: uppercase;
@@ -33,16 +39,11 @@ h4{
 }
 
 .audio-card img{
+    height: auto;
     width: 100%;
     object-fit: cover;
 }
-
-.clearfix::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
+ 
 /*----MAIN----*/
 
 
@@ -60,23 +61,22 @@ h4{
 
 .upper-sidebar{
     overflow: hidden;
-    background-color:blue;
     color:#a3a3a3;
 }
 
 .playlist{
     overflow: hidden;
+    height: 80%;
 }
 
 .all-playlist{
-    height: 210px;
+    height: 60%;
     overflow-y: auto;
 }
 
 .lower-sidebar{
     height: 80px;
     padding: 0 20px;
-    background-color: aquamarine;
 }
 
 .lower-sidebar .install-app{
@@ -279,13 +279,12 @@ footer .row .col-xs-2, footer .row .col-xs-4{
 
 /* HOVER EFFECT */
 
+/* hover music-section container: stroke + change color for "a" elements */
 
 .music-sections a:after{
   transition: all .5s;
 }
 
-
-/* stroke */
 .music-sections a{
   position: relative;
 }
@@ -309,6 +308,12 @@ footer .row .col-xs-2, footer .row .col-xs-4{
 }
 .music-sections a:hover:after {
   width: 50%;
+}
+
+/* Hover image my-music container: change brithness image + display "play-icon"  */
+
+.my-music img:hover{
+    filter:brightness(0.5)
 }
 
 
