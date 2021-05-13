@@ -231,7 +231,7 @@ header .upgrade{
     padding: 10px 30px;
     border-radius: 20px;
     position: fixed;
-    right: 10px;
+    right: 20px;
     top: 16px;
     z-index: 6;
 }
@@ -305,7 +305,13 @@ footer .row .col-xs-2, footer .row .col-xs-4{
 
 /* HOVER EFFECT */
 
-/* hover music-section container: stroke + change color for "a" elements */
+/* Hover on "effettua upgrade" span-button */
+
+header .upgrade:hover{
+    transform: scale(1.1);
+}
+
+/* Hover music-section container: stroke + change color for "a" elements */
 
 .music-sections a:after{
   transition: all .5s;
@@ -341,6 +347,8 @@ footer .row .col-xs-2, footer .row .col-xs-4{
 .my-music img:hover{
     filter:brightness(0.5)
 }
+
+
 
 
 
