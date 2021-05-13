@@ -20,13 +20,17 @@ h4{
     margin: 5px;
 }
 
-span{
+.content-page span{
     font-size: 12px;
     text-transform: uppercase;
-    margin: 0 7px;
-    color: #707378;
+    margin: 0 10px;
 }
 
+.content-page span a{
+    color: #707378;
+    font-weight: 500px;
+    text-decoration: none;
+}
 
 .audio-card img{
     width: 100%;
@@ -46,34 +50,135 @@ span{
 
 #sidebar{
     height: calc(100vh - 90px);
+    min-height: 480px;
     background-color: black;
+    color: #a3a3a3;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.upper-sidebar{
+    overflow: hidden;
+    background-color:blue;
+    color:#a3a3a3;
+}
+
+.playlist{
+    overflow: hidden;
+}
+
+.all-playlist{
+    height: 210px;
+    overflow-y: auto;
+}
+
+.lower-sidebar{
+    height: 80px;
+    padding: 0 20px;
+    background-color: aquamarine;
+}
+
+.lower-sidebar .install-app{
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.lower-sidebar .install-app span{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.lower-sidebar .install-app img{
+    vertical-align: middle;
+    width: 25px;
+} 
+
+.lower-sidebar .user-profile{
+    padding-top: 10px;
+}
+
+.lower-sidebar .user-profile .img-profile{
+    display: inline-block;
+    background-color: #808080;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.lower-sidebar .user-profile .img-profile img{
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 50%;
+} 
+
+.lower-sidebar .user-profile .user-name{
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+} 
+
 .logo{
-    height: 70px;
+    height: 60px;
 }
+
 .logo img{
-    padding: 20px;
-    width: 180px;
+    padding-top: 15px;
+    margin-left: 20px;
+    width: 120px;
 }
 
 .navbar .row{
     display: flex;
     align-items: center;
-    color:white;
-}
-.navbar .row img{
-    width: 30px;
-    color:white;
+    margin: 5px 0;
+    padding-left: 20px;
 }
 
+.navbar .row img{
+    width: 26px;
+}
+
+.navbar .row .icon-description{
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.navbar{
+    margin-top: 15px;
+}
 .playlist{
-    color: white;
+    margin-top: 20px;
+    padding-left: 20px;
 }
 
 ul li{
+    font-size: 12px;
     list-style: none;
+    margin: 12px 0;
 }
 
+#sidebar .playlist h4{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+}
+
+.add-playlist{
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.add-playlist i{
+    font-size: 40px;
+    margin-right: 10px;
+}
 
 /* ---Content Page---*/
 .content-page{
@@ -95,8 +200,6 @@ header{
 }
 
 header .upgrade{
-    color: white;
-    font-weight: 500px;
     border: 1px solid white;
     padding: 10px 30px;
     border-radius: 20px;
@@ -106,6 +209,11 @@ header .upgrade{
     z-index: 6;
 }
 
+header .upgrade a{
+    color: white;
+
+}
+
 /* Section */
 
 section{
@@ -113,8 +221,12 @@ section{
 }
 
 .music-sections{
-   text-align: center;
-}
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+} 
+
 
 .my-music{
     margin-top: 20px;
@@ -164,7 +276,48 @@ footer .row .col-xs-2, footer .row .col-xs-4{
     height: 70px;
 }
 
+
+/* HOVER EFFECT */
+
+
+.music-sections a:after{
+  transition: all .5s;
+}
+
+
+/* stroke */
+.music-sections a{
+  position: relative;
+}
+
+.music-sections a:hover{
+    color: white;
+}
+
+.music-sections a:after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background:#aafb2e;
+  border-radius: 30px;
+  height: 3px;
+}
+.music-sections a:hover:after {
+  width: 50%;
+}
+
+
+
 /* RESPONSIVE */
+
+@media screen and (min-width:576px) {
+
+}
 
 @media screen and (min-width:768px) {
 
