@@ -54,7 +54,21 @@ h4{
     width: calc(100% / 2 - 10px);
 }
 
-.audio-card img{
+.audio-card .image-audio-card{
+    position: relative;
+}
+
+.audio-card .image-audio-card i{
+    display: none;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.audio-card  img{
     height: auto;
     width: 100%;
     object-fit: cover;
@@ -477,9 +491,9 @@ header .upgrade:hover{
     filter:brightness(0.5)
 }
 
-
-
-
+.audio-card .image-audio-card:hover #play{
+    display: block;
+}
 
 /* RESPONSIVE */
 
