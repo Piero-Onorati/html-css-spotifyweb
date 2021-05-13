@@ -12,7 +12,7 @@ body{
 
 h2{
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 h4{
@@ -26,10 +26,9 @@ h4{
     clear: both;
 }
 
-.content-page span{
+.content-page .music-sections span, .content-page header .upgrade{
     font-size: 12px;
-    text-transform: uppercase;
-    margin: 0 10px;
+    text-transform: uppercase; 
 }
 
 .content-page span a{
@@ -38,10 +37,36 @@ h4{
     text-decoration: none;
 }
 
+.content-page .my-music .subtitle{
+    color: #707378;
+    font-size: 14px;
+}
+
+.audio-card-box{
+    margin-top: 30px;
+}
+
+.audio-card{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    height: auto;
+    width: calc(100% / 2 - 10px);
+}
+
 .audio-card img{
     height: auto;
     width: 100%;
     object-fit: cover;
+}
+
+.audio-card .audio-card-description h4{
+    font-size: 14px;
+}
+
+.audio-card .audio-card-description span{
+    text-transform: lowercase;
+    color:#707378;
 }
  
 /*----MAIN----*/
@@ -63,63 +88,6 @@ h4{
     overflow: hidden;
     color:#a3a3a3;
 }
-
-.playlist{
-    overflow: hidden;
-    height: 80%;
-}
-
-.all-playlist{
-    height: 60%;
-    overflow-y: auto;
-}
-
-.lower-sidebar{
-    height: 80px;
-    padding: 0 20px;
-}
-
-.lower-sidebar .install-app{
-    padding-bottom: 5px;
-    border-bottom: 1px solid black;
-}
-
-.lower-sidebar .install-app span{
-    font-size: 12px;
-    margin-left: 5px;
-}
-
-.lower-sidebar .install-app img{
-    vertical-align: middle;
-    width: 25px;
-} 
-
-.lower-sidebar .user-profile{
-    padding-top: 10px;
-}
-
-.lower-sidebar .user-profile .img-profile{
-    display: inline-block;
-    background-color: #808080;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-}
-
-.lower-sidebar .user-profile .img-profile img{
-    vertical-align: middle;
-    width: 100%;
-    border-radius: 50%;
-} 
-
-.lower-sidebar .user-profile .user-name{
-    color:white;
-    font-weight: bold;
-    font-size: 14px;
-    margin-left: 5px;
-} 
 
 .logo{
     height: 60px;
@@ -180,6 +148,65 @@ ul li{
     margin-right: 10px;
 }
 
+.playlist{
+    overflow: hidden;
+    height: 80%;
+}
+
+.all-playlist{
+    height: 60%;
+    overflow-y: auto;
+}
+
+.lower-sidebar{
+    height: 80px;
+    padding: 0 20px;
+}
+
+.lower-sidebar .install-app{
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.lower-sidebar .install-app span{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.lower-sidebar .install-app img{
+    vertical-align: middle;
+    width: 25px;
+} 
+
+.lower-sidebar .user-profile{
+    padding-top: 10px;
+}
+
+.lower-sidebar .user-profile .img-profile{
+    display: inline-block;
+    background-color: #808080;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.lower-sidebar .user-profile .img-profile img{
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 50%;
+} 
+
+.lower-sidebar .user-profile .user-name{
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+} 
+
+
+
 /* ---Content Page---*/
 .content-page{
     height: calc(100vh - 90px);
@@ -227,6 +254,9 @@ section{
     width: 90%;
 } 
 
+.content-page .music-sections span{
+    margin:15px;
+}
 
 .my-music{
     margin-top: 20px;
@@ -237,11 +267,7 @@ section{
     margin: 0 10px 20px 20px;
 }
 
-.audio-card{
-    float: left;
-    margin-right: 10px;
-    width: calc(100% / 2 - 10px);
-}
+
 
 .circle-card img{
     border-radius: 50%;
@@ -329,6 +355,19 @@ footer .row .col-xs-2, footer .row .col-xs-4{
     .audio-card{
         width: calc(100% / 4 - 10px);
     }
+
+    .recently-played .audio-card .audio-card-description{
+        height: 100px;
+    }
+    
+    .audio-card .audio-card-description h4{
+        font-size: 13px;
+    }
+
+    .audio-card .audio-card-description span{
+        font-size: 11px;
+     } 
+     
     
 }
 
@@ -338,4 +377,18 @@ footer .row .col-xs-2, footer .row .col-xs-4{
         margin-right: 20px;
         width: calc(100%  / 6 - 20px);
     }
+
+    .recently-played .audio-card .audio-card-description{
+        height: auto;
+    }
+    
+    .audio-card .audio-card-description h4{
+        font-size: 14px;
+    }
+
+    .audio-card .audio-card-description span{
+       font-size: 12px;
+    }
+    
+    
 }
