@@ -158,6 +158,8 @@ ul li{
     overflow-y: auto;
 }
 
+/* lower-sidebar */
+
 .lower-sidebar{
     height: 80px;
     padding: 0 20px;
@@ -165,7 +167,7 @@ ul li{
 
 .lower-sidebar .install-app{
     padding-bottom: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #a3a3a3;;
 }
 
 .lower-sidebar .install-app span{
@@ -305,10 +307,25 @@ footer .row .col-xs-2, footer .row .col-xs-4{
 
 /* HOVER EFFECT */
 
+/* Hover sidebar */
+
+.navbar .row:hover{
+    border-left: 4px solid #aafb2e;
+    color:white;
+    background-color: rgb(0,255,0,0.1);
+}
+
+.all-playlist li:hover, .add-playlist:hover, .install-app:hover{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
 /* Hover on "effettua upgrade" span-button */
 
 header .upgrade:hover{
     transform: scale(1.1);
+    background-color: rgb(255,255,255,0.1);
 }
 
 /* Hover music-section container: stroke + change color for "a" elements */
@@ -327,7 +344,7 @@ header .upgrade:hover{
 
 .music-sections a:after {
   position: absolute;
-  bottom: -5px;
+  bottom: -7px;
   left: 0;
   right: 0;
   margin: auto;
