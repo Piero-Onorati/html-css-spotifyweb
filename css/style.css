@@ -438,13 +438,18 @@ footer .left-footer .like-folder i{
 
 /* .middle-footer */
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .music-controller{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-    
 }
+
 .music-controller i{
     margin: 0 10px 0 10px;
     font-size: 20px;
@@ -455,11 +460,23 @@ footer .left-footer .like-folder i{
     font-size: 30px;
 }
 
-.progressbar-container{
-    background-color: blueviolet;
-    height: 35px;
+/* middle-footer-bottom */
+.middle-footer-bottom{
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.middle-footer-bottom .time{
+    font-size: 12px;
+    color: #c1c1c1;
+}
+
+.progressbar-container{
+    width: 60%;
+    margin: 0 20px;
+}
 
 .progressbar {
     background-color: #5a5a5a;
@@ -468,6 +485,7 @@ footer .left-footer .like-folder i{
 }
 
 .fa-circle{
+    color: #c1c1c1;
     position: absolute;
     top: 50%;
     left: 38%;
@@ -477,7 +495,7 @@ footer .left-footer .like-folder i{
 .progressbar>div {
     background-color: #c1c1c1;
     width: 40%;
-    height: 8px;
+    height: 5px;
     border-radius: 10px;
 }
 
@@ -491,27 +509,28 @@ footer .right-footer{
 }
 
 footer .right-footer i{
+    margin: 0 8px;
     font-size: 15px;
     color: #c1c1c1;
-}
+} 
 
 footer .right-footer .progressbar{
     display: inline-block;
     width: 60%;
 }
 
+
 footer .right-footer .progressbar>div{
-    height: 6px;
-    
+    height: 4px;
 }
 
-footer .right-footer .progressbar i{
+footer .right-footer .progressbar .fa-circle{
+    color: #c1c1c1;
     position: absolute;
     top: 50%;
     left: 36%;
     transform: translateY(-50%);
-
-}
+} 
 
 /* ---------------CUSTOMIZED SCROLLBAR--------------------- */
 
@@ -571,12 +590,14 @@ background: #aafb2e;
     border-left: 4px solid #aafb2e;
     color:white;
     background-color: rgb(0,255,0,0.1);
+    cursor: pointer;
 }
 
 .all-playlist li:hover, .add-playlist:hover, .install-app:hover{
     color: white;
     font-size: 13px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* Hover on "effettua upgrade" span-button */
