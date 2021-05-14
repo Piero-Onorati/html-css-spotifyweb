@@ -54,6 +54,7 @@ h4{
     width: calc(100% / 2 - 10px);
 }
 
+
 .audio-card  img{
     height: auto;
     width: 100%;
@@ -71,11 +72,11 @@ h4{
     position: absolute;
     top:0;
     left: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%; 
+    display: none;
 }
 
 .audio-card .image-audio-card i{
@@ -358,7 +359,12 @@ section{
     margin: 0 10px 20px 20px;
 }
 
+
 .circle-card img{
+    border-radius: 50%;
+}
+
+.circle-card .iamge-layover{
     border-radius: 50%;
 }
 
@@ -613,9 +619,11 @@ header .upgrade:hover{
 
 /* Hover image my-music container: change brithness image + display "play-icon"  */
 
+.audio-card .image-audio-card:hover .iamge-layover{
+    display: flex;
+}
 
-
-/* RESPONSIVE */
+/*-------------------------RESPONSIVE-------------------- */
 
 @media screen and (min-width:576px) {
     #sidebar{
