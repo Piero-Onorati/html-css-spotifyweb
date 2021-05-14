@@ -54,25 +54,35 @@ h4{
     width: calc(100% / 2 - 10px);
 }
 
-.audio-card .image-audio-card{
-    position: relative;
-}
-
-.audio-card .image-audio-card i{
-    display: none;
-    font-size: 60px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .audio-card  img{
     height: auto;
     width: 100%;
     object-fit: cover;
 }
+
+.audio-card .image-audio-card{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.audio-card .iamge-layover{
+    background-color: rgba(0, 0, 0, 0.54);
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+}
+
+.audio-card .image-audio-card i{
+    font-size: 60px;
+    color: white;
+} 
+
 
 .audio-card .audio-card-description h4{
     font-size: 14px;
@@ -86,22 +96,89 @@ h4{
 /*----MAIN----*/
 
 
-/* ---Sidebar---*/
+/* ---ALL MY SIDEBARS: SIDEBAR-XS & SIDEBAR(from SM to LG)---*/
+
+#sidebar-xs{
+    
+    height: calc(100vh - 90px);
+    background-color: black;
+    color: #a3a3a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Upper sidebar-xs */
+
+.upper-sidebar-xs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.upper-sidebar-xs img:nth-of-type(1){
+    width: 60%;
+    margin-bottom: 8px;
+}
+
+.upper-sidebar-xs img{
+    margin: 3px auto;
+    width: 55%;
+}
+
+/* Lower-sidebar-xs */
+
+.lower-sidebar-xs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.lower-sidebar-xs>img{
+    margin-bottom: 10px;
+    margin-left: -5px;
+    width: 55%;
+}    
+
+.lower-sidebar-xs .img-profile{
+    background-color: #808080;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.lower-sidebar-xs .img-profile>img{
+    width: 90%;
+    border-radius: 50%;
+} 
+
+/* SIDEBAR(from SM to LG) */
 
 #sidebar{
     height: calc(100vh - 90px);
     min-height: 480px;
     background-color: black;
     color: #a3a3a3;
-    display:flex;
+    display:none;
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* Upper sidebar (composed by 3 parts: logo + navbar + playlist) */
 
 .upper-sidebar{
     overflow: hidden;
     color:#a3a3a3;
 }
+
+/* Upper sidebar: logo */
 
 .logo{
     height: 60px;
@@ -111,6 +188,12 @@ h4{
     padding-top: 15px;
     margin-left: 20px;
     width: 120px;
+}
+
+/* Upper sidebar: navbar */
+
+.navbar{
+    margin-top: 15px;
 }
 
 .navbar .row{
@@ -129,18 +212,13 @@ h4{
     padding-left: 8px;
 }
 
-.navbar{
-    margin-top: 15px;
-}
+/* Upper sidebar: playlist */
+
 .playlist{
     margin-top: 20px;
     padding-left: 20px;
-}
-
-ul li{
-    font-size: 12px;
-    list-style: none;
-    margin: 12px 0;
+    overflow: hidden;
+    height: 80%;
 }
 
 #sidebar .playlist h4{
@@ -162,14 +240,15 @@ ul li{
     margin-right: 10px;
 }
 
-.playlist{
-    overflow: hidden;
-    height: 80%;
-}
-
 .all-playlist{
     height: 60%;
     overflow-y: auto;
+}
+
+ul li{
+    font-size: 12px;
+    list-style: none;
+    margin: 12px 0;
 }
 
 /* lower-sidebar */
@@ -210,7 +289,7 @@ ul li{
 
 .lower-sidebar .user-profile .img-profile img{
     vertical-align: middle;
-    width: 100%;
+    width: 90%;
     border-radius: 50%;
 } 
 
@@ -221,9 +300,8 @@ ul li{
     margin-left: 5px;
 } 
 
-
-
 /* ---Content Page---*/
+
 .content-page{
     height: calc(100vh - 90px);
     background-color: #141922;;
@@ -355,7 +433,6 @@ footer .left-footer .like-folder i{
 
 /* .middle-footer */
 
-
 .music-controller{
     display: flex;
     justify-content: center;
@@ -431,7 +508,48 @@ footer .right-footer .progressbar i{
 
 }
 
-/* HOVER EFFECT */
+/* ---------------CUSTOMIZED SCROLLBAR--------------------- */
+
+/* main-content-page scroll-bar */
+
+.content-page::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+.content-page::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+    border-radius: 10px;
+}
+
+.content-page::-webkit-scrollbar-track{
+    background: rgba(8, 11, 18, 0.8);
+    border-radius: 10px;
+}
+
+/* all-playlist scroll-bar */
+
+.all-playlist::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.all-playlist::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+    border-radius: 10px;
+}
+
+.all-playlist::-webkit-scrollbar-thumb:hover{
+background: #aafb2e;
+}
+
+.all-playlist::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+/*----------------- HOVER EFFECT-------------------------------*/
 
 /* Hover sidebar */
 
@@ -487,18 +605,18 @@ header .upgrade:hover{
 
 /* Hover image my-music container: change brithness image + display "play-icon"  */
 
-.my-music img:hover{
-    filter:brightness(0.5)
-}
 
-.audio-card .image-audio-card:hover #play{
-    display: block;
-}
 
 /* RESPONSIVE */
 
 @media screen and (min-width:576px) {
+    #sidebar{
+        display: flex;
+    }
 
+    #sidebar-xs{
+        display: none;
+    }
 }
 
 @media screen and (min-width:768px) {
