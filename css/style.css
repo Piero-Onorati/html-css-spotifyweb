@@ -655,7 +655,7 @@ header .upgrade:hover{
     color: white;
 }
 
-.music-controller i:hover{
+.music-controller i:not(:nth-of-type(3)):hover{
     color:white;
     font-size: 16px;
 }
@@ -722,13 +722,9 @@ header .upgrade:hover{
         font-size: 20px; ;
     } 
 
-    .music-controller i:hover{
-        font-size: 22px;
+    .music-controller i:not(:nth-of-type(3)):hover{
+    font-size: 22px;
     }
-    
-    .music-controller i:nth-of-type(3){
-        font-size: 30px;
-    } 
     
     .middle-footer-bottom .time{
         font-size: 12px;
