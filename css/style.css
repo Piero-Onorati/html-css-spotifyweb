@@ -538,6 +538,12 @@ footer .right-footer .progressbar .fa-circle{
 
 /* main-content-page scroll-bar */
 
+/* for mozzilla */
+
+.content-page{
+    scrollbar-color: #a3a3a3 rgba(8, 11, 18, 0.8) ;
+}
+
 .content-page::-webkit-scrollbar {
     width: 12px;
 }
@@ -553,6 +559,11 @@ footer .right-footer .progressbar .fa-circle{
 }
 
 /* all-playlist scroll-bar */
+
+/* for mozzilla */
+.all-playlist{
+    scrollbar-color: rgb(0,255,0,0.2) #0000 ;
+}
 
 .all-playlist::-webkit-scrollbar {
     width: 8px;
@@ -573,7 +584,7 @@ background: #aafb2e;
     box-shadow: inset 7px 10px 12px #f0f0f0;
 }
 
-/*----------------- HOVER EFFECT-------------------------------*/
+/*----------------- HOVER EFFECTS-----------------------------*/
 
 /* Hover sidebar */
 
