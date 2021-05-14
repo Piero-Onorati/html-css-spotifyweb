@@ -308,7 +308,6 @@ ul li{
     overflow: auto;
 }
 
-
 /* Header */
 
 header{
@@ -426,7 +425,7 @@ footer .left-footer .song-played  .song-played-title span{
 footer .left-footer .song-played  .song-played-title .song-title{
     font-size: 13px;
     color: white;
-    font-weight: bold;
+    font-weight: 500px;
 }
 
 
@@ -486,12 +485,13 @@ footer{
     position: relative;
 }
 
-.fa-circle{
+.middle-footer-bottom .fa-circle{
     color: #c1c1c1;
     position: absolute;
     top: 50%;
     left: 38%;
     transform: translateY(-50%);
+    display: none;
 }
   
 .progressbar>div {
@@ -531,6 +531,7 @@ footer .right-footer .progressbar .fa-circle{
     top: 50%;
     left: 23%;
     transform: translateY(-50%);
+    display: none;
 } 
 
 /* ---------------CUSTOMIZED SCROLLBAR--------------------- */
@@ -609,11 +610,11 @@ header .upgrade:hover{
 /* Hover music-section container: stroke + change color for "a" elements */
 
 .music-sections a:after{
-  transition: all .5s;
+    transition: all .5s;
 }
 
 .music-sections a{
-  position: relative;
+    position: relative;
 }
 
 .music-sections a:hover{
@@ -621,20 +622,21 @@ header .upgrade:hover{
 }
 
 .music-sections a:after {
-  position: absolute;
-  bottom: -7px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background:#aafb2e;
-  border-radius: 30px;
-  height: 3px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background:#aafb2e;
+    border-radius: 30px;
+    height: 3px;
 }
+
 .music-sections a:hover:after {
-  width: 50%;
+    width: 50%;
 }
 
 /* Hover image my-music container: change brithness image + display "play-icon"  */
@@ -642,6 +644,38 @@ header .upgrade:hover{
 .audio-card .image-audio-card:hover .iamge-layover{
     display: flex;
 }
+
+/* Hover footer */
+
+.left-footer .song-played-title span:hover{
+    font-weight: bolder;
+}
+
+.left-footer .like-folder i:hover, .right-footer i:hover{
+    color: white;
+}
+
+.music-controller i:hover{
+    color:white;
+    font-size: 16px;
+}
+
+.music-controller i:nth-of-type(3):hover{
+    color:#aafb2e ;
+}
+
+.right-footer .progressbar:hover .fa-circle{
+    display: block;
+}
+  
+.progressbar>div:hover {
+    background-color: #aafb2e;
+}
+
+.middle-footer-bottom .progressbar:hover .fa-circle{
+    display: block;
+}
+
 
 /*-------------------------RESPONSIVE-------------------- */
 
@@ -657,6 +691,7 @@ header .upgrade:hover{
     footer .left-footer{
         padding-left: 20px;
     }
+
 }
 
 @media screen and (min-width:768px) {
@@ -682,6 +717,28 @@ header .upgrade:hover{
         font-size: 20px;
     }
 
+    .music-controller i{
+        margin: 0 10px 0 10px;
+        font-size: 20px; ;
+    } 
+
+    .music-controller i:hover{
+        font-size: 22px;
+    }
+    
+    .music-controller i:nth-of-type(3){
+        font-size: 30px;
+    } 
+    
+    .middle-footer-bottom .time{
+        font-size: 12px;
+    } 
+    
+    .progressbar-container{
+        width: 60%;
+        margin: 0 20px;
+    }
+    
     footer .right-footer{
         padding-right: 20px;
     }
@@ -691,29 +748,8 @@ header .upgrade:hover{
         font-size: 15px;
         color: #c1c1c1;
     }
-
-    .music-controller i{
-        margin: 0 10px 0 10px;
-        font-size: 20px;
-        color: #c1c1c1 ;
-    } 
-
-    .music-controller i:nth-of-type(3){
-        font-size: 30px;
-    } 
-
-    .middle-footer-bottom .time{
-        font-size: 12px;
-    } 
-
-    .progressbar-container{
-    width: 60%;
-    margin: 0 20px;
-    }
-
 }  
      
-
 @media screen and (min-width:992px) {
 
     .audio-card{
@@ -732,6 +768,5 @@ header .upgrade:hover{
     .audio-card .audio-card-description span{
        font-size: 12px;
     }
-    
     
 }
