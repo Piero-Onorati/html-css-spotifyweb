@@ -26,21 +26,7 @@ h4{
     clear: both;
 }
 
-.content-page .music-sections span, .content-page header .upgrade{
-    font-size: 12px;
-    text-transform: uppercase; 
-}
-
-.content-page span a{
-    color: #707378;
-    font-weight: 500px;
-    text-decoration: none;
-}
-
-.content-page .my-music .subtitle{
-    color: #707378;
-    font-size: 14px;
-}
+/* audio card */
 
 .audio-card-box{
     margin-top: 30px;
@@ -53,7 +39,6 @@ h4{
     height: auto;
     width: calc(100% / 2 - 10px);
 }
-
 
 .audio-card  img{
     height: auto;
@@ -84,7 +69,6 @@ h4{
     color: white;
 } 
 
-
 .audio-card .audio-card-description h4{
     font-size: 14px;
 }
@@ -94,10 +78,9 @@ h4{
     color:#707378;
 }
  
-/*----MAIN----*/
+/*---------------------------------MAIN----------------------------------*/
 
-
-/* ---ALL MY SIDEBARS: SIDEBAR-XS & SIDEBAR(from SM to LG)---*/
+/* -----------ALL MY SIDEBARS: SIDEBAR-XS & SIDEBAR(from SM to LG)--------*/
 
 #sidebar-xs{
     
@@ -300,7 +283,7 @@ ul li{
     margin-left: 5px;
 } 
 
-/* ---Content Page---*/
+/* ----------------------Content Page---------------------*/
 
 .content-page{
     height: calc(100vh - 90px);
@@ -339,6 +322,12 @@ section{
     margin-top: 80px;
 }
 
+.content-page span a{
+    color: #707378;
+    font-weight: 500px;
+    text-decoration: none;
+}
+
 .music-sections{
     display: flex;
     justify-content: center;
@@ -346,12 +335,22 @@ section{
     width: 90%;
 } 
 
+.content-page .music-sections span, .content-page header .upgrade{
+    font-size: 12px;
+    text-transform: uppercase; 
+}
+
 .content-page .music-sections span{
     margin:15px;
 }
 
 .my-music{
     margin-top: 20px;
+}
+
+.content-page .my-music .subtitle{
+    color: #707378;
+    font-size: 14px;
 }
 
 .recently-played, .created-for-U, .popular-artists{
@@ -371,7 +370,8 @@ section{
     text-align: center;
 }
 
-/* ---FOOTER--- */
+/* ------------------FOOTER------------------ */
+
 footer{
     height: 90px;
     width: 100%;
@@ -428,7 +428,6 @@ footer .left-footer .song-played  .song-played-title .song-title{
     font-weight: 500px;
 }
 
-
 footer .left-footer .like-folder i{
     font-size: 16px;
     margin-bottom: 8px;
@@ -460,8 +459,8 @@ footer{
     font-size: 28px;
 }
 
-
 /* middle-footer-bottom */
+
 .middle-footer-bottom{
     padding-top: 12px;
     display: flex;
@@ -539,7 +538,6 @@ footer .right-footer .progressbar .fa-circle{
 /* main-content-page scroll-bar */
 
 /* for mozzilla */
-
 .content-page{
     scrollbar-color: #a3a3a3 rgba(8, 11, 18, 0.8) ;
 }
@@ -692,8 +690,7 @@ header .upgrade:hover{
     display: block;
 }
 
-
-/*-------------------------RESPONSIVE-------------------- */
+/*-------------------------RESPONSIVE--------------------- */
 
 @media screen and (min-width:576px) {
     #sidebar{
@@ -707,7 +704,6 @@ header .upgrade:hover{
     footer .left-footer{
         padding-left: 20px;
     }
-
 }
 
 @media screen and (min-width:768px) {
