@@ -604,11 +604,16 @@ background: #aafb2e;
     cursor: pointer;
 }
 
-.all-playlist li:hover, .add-playlist:hover, .install-app:hover{
+.add-playlist:hover, .install-app:hover{
     color: white;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.all-playlist li:hover{
+    color: white;
+    font-weight: bolder;
 }
 
 /* Hover on "effettua upgrade" span-button */
