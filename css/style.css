@@ -105,11 +105,11 @@ h4{
 
 .upper-sidebar-xs img:nth-of-type(1){
     width: 60%;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .upper-sidebar-xs img{
-    margin: 3px auto;
+    margin: 0 auto;
     width: 55%;
 }
 
@@ -304,6 +304,7 @@ header{
 
 header .upgrade{
     border: 1px solid white;
+    font-weight: bold;
     padding: 10px 30px;
     border-radius: 20px;
     position: fixed;
@@ -314,6 +315,7 @@ header .upgrade{
 
 header .upgrade a{
     color: white;
+    text-decoration: none;
 }
 
 /* Section */
@@ -322,7 +324,7 @@ section{
     margin-top: 80px;
 }
 
-.content-page span a{
+.content-page span a:not(.upgrade>a){
     color: #707378;
     font-weight: 500px;
     text-decoration: none;
