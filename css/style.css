@@ -380,7 +380,7 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     background-color: #282828
 }
 
@@ -802,8 +802,7 @@ header .upgrade:hover{
 
 @media screen and (max-height:350px) {
     
-   .content-page header {
-       position:relative;
+   .content-page header { 
        height: 0px;
    }
 
