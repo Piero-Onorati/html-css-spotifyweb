@@ -398,14 +398,10 @@ footer .left-footer, footer .middle-footer, footer .right-footer{
 /* left-footer */
 
 footer .left-footer{
-    padding-left: 7px;
-}
-
-footer .left-footer .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    padding-left: 5px;
 }
 
 footer .left-footer .song-played{
@@ -414,7 +410,7 @@ footer .left-footer .song-played{
 }
 
 footer .left-footer .song-played img{
-    width: 50px;
+    width: 0px;
 }
 
 footer .left-footer .song-played  .song-played-title{
@@ -437,7 +433,7 @@ footer .left-footer .song-played  .song-played-title .song-title{
 footer .left-footer .like-folder i{
     font-size: 16px;
     margin-bottom: 8px;
-    margin-left: 5px;
+    padding-right: 8px;
     color: #c1c1c1;
 }
 
@@ -504,7 +500,7 @@ footer .left-footer .like-folder i{
 
 footer .right-footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     padding-right: 7px;
 }
@@ -516,7 +512,7 @@ footer .right-footer i{
 } 
 
 footer .right-footer .progressbar{
-    display: inline-block;
+    display: none;
     width: 50%;
 }
 
@@ -691,6 +687,29 @@ header .upgrade:hover{
 }
 
 /*-------------------------RESPONSIVE--------------------- */
+
+@media screen and (min-width:420px) {
+    footer .left-footer{
+        padding-left: 7px;
+    }
+
+    footer .left-footer .song-played img{
+        width: 50px;
+    }
+
+    footer .left-footer .like-folder i{
+        margin-left: 5px;
+    }
+
+    footer .right-footer{
+        justify-content: space-around;
+        justify-content: center;
+    }
+
+    footer .right-footer .progressbar{
+        display: inline-block;
+    }
+}
 
 @media screen and (min-width:576px) {
     #sidebar{
