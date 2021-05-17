@@ -398,10 +398,14 @@ footer .left-footer, footer .middle-footer, footer .right-footer{
 /* left-footer */
 
 footer .left-footer{
+    padding-left: 7px;
+}
+
+footer .left-footer .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 7px;
+    flex-wrap: nowrap;
 }
 
 footer .left-footer .song-played{
@@ -438,12 +442,6 @@ footer .left-footer .like-folder i{
 }
 
 /* .middle-footer */
-
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .music-controller{
     display: flex;
