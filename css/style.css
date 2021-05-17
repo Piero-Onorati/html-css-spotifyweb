@@ -397,40 +397,41 @@ footer .left-footer, footer .middle-footer, footer .right-footer{
 
 /* left-footer */
 
-footer .left-footer{
+footer .left-footer .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 5px;
+    flex-wrap: nowrap;
 }
 
-footer .left-footer .song-played{
+footer .left-footer .row .song-played{
     display: flex;
     align-items: center;
 }
 
-footer .left-footer .song-played img{
+footer .left-footer .row .song-played img{
     width: 0px;
 }
 
-footer .left-footer .song-played  .song-played-title{
+footer .left-footer .row .song-played  .song-played-title{
     margin-left: 10px;
 }
 
-footer .left-footer .song-played  .song-played-title span{
+footer .left-footer .row .song-played  .song-played-title span{
     display: block;
     font-size: 12px;
     margin-top: 0;
     color: #5a5a5a;
 }
 
-footer .left-footer .song-played  .song-played-title .song-title{
+footer .left-footer .row .song-played  .song-played-title .song-title{
     font-size: 13px;
     color: white;
     font-weight: 500px;
 }
 
-footer .left-footer .like-folder i{
+footer .left-footer .row .like-folder i{
     font-size: 16px;
     margin-bottom: 8px;
     padding-right: 8px;
@@ -498,14 +499,15 @@ footer .left-footer .like-folder i{
 
 /* right-footer */
 
-footer .right-footer{
+footer .right-footer .row{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 7px;
+    flex-wrap: nowrap;
 }
 
-footer .right-footer i{
+footer .right-footer .row i{
     margin: 0 5px;
     font-size: 12px;
     color: #c1c1c1;
@@ -661,7 +663,7 @@ header .upgrade:hover{
     font-weight: bolder;
 }
 
-.left-footer .like-folder i:hover, .right-footer i:hover{
+.left-footer .row .like-folder i:hover, .right-footer .row i:hover{
     color: white;
 }
 
@@ -674,10 +676,6 @@ header .upgrade:hover{
     color:#aafb2e ;
 }
 
-.right-footer .progressbar:hover .fa-circle{
-    display: block;
-}
-  
 .progressbar>div:hover {
     background-color: #aafb2e;
 }
@@ -686,22 +684,26 @@ header .upgrade:hover{
     display: block;
 }
 
+.right-footer .row .progressbar:hover .fa-circle{
+    display: block;
+}
+  
 /*-------------------------RESPONSIVE--------------------- */
 
 @media screen and (min-width:420px) {
-    footer .left-footer{
+    footer .left-footer .row{
         padding-left: 7px;
     }
 
-    footer .left-footer .song-played img{
+    footer .left-footer  .row .song-played img{
         width: 50px;
     }
 
-    footer .left-footer .like-folder i{
+    footer .left-footer .row .like-folder i{
         margin-left: 5px;
     }
 
-    footer .right-footer{
+    footer .right-footer .row{
         justify-content: space-around;
         justify-content: center;
     }
@@ -720,7 +722,7 @@ header .upgrade:hover{
         display: none;
     }
 
-    footer .left-footer{
+    footer .left-footer .row{
         padding-left: 20px;
     }
 }
@@ -743,7 +745,7 @@ header .upgrade:hover{
         font-size: 11px;
     } 
     
-    footer .left-footer .like-folder i{
+    footer .left-footer .row .like-folder i{
         margin-left: 15px;
         font-size: 20px;
     }
@@ -766,11 +768,11 @@ header .upgrade:hover{
         margin: 0 20px;
     }
     
-    footer .right-footer{
+    footer .right-footer .row{
         padding-right: 20px;
     }
 
-    footer .right-footer i{
+    footer .right-footer .row i{
         margin: 0 8px;
         font-size: 15px;
         color: #c1c1c1;
