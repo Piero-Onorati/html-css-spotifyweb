@@ -799,3 +799,16 @@ header .upgrade:hover{
     }
     
 }
+
+@media screen and (max-height:350px) {
+    
+   .content-page header {
+       position:relative;
+       display: none;
+   }
+
+   section{
+    margin-top: 30px;
+   }
+}
+
