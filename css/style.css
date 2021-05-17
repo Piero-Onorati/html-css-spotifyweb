@@ -299,7 +299,7 @@ header{
     background-color: rgba(8, 11, 18, 0.8);
     position: fixed;
     z-index: 3;
-    text-align: center;
+     transition: all .25s linear; 
 }
 
 header .upgrade{
@@ -804,6 +804,10 @@ header .upgrade:hover{
     
    .content-page header {
        position:relative;
+       height: 0px;
+   }
+
+   .content-page header .upgrade{
        display: none;
    }
 
